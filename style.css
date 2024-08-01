@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    padding: 3.8vw 1vw;
+    color: black;
+    font-weight: 500;
+    word-spacing: 1vw;
+    letter-spacing: .1vw;
+    font-size: 2.8rem;
+}
+
+#container{
+    width: 88%;
+    min-height: 50vh;
+    padding: 1vw 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vw;
+    overflow: hidden;
+}
+
+#inputs{
+    width: 60%;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+#inputs input{
+    width: 87%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1.1vw 1vw 1.1vw 2vw;
+    font-size: 1.2rem;
+    color: #000;
+    text-transform: capitalize;
+}
+
+#inputs input::placeholder{
+    color: #fff;
+}
+
+.btn{
+    background-color: #ff3929;
+    padding: 1.2vw 1.7vw;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#result{
+    width: 100%;
+    padding: 1.2vw 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.2vw;
+}
+
+#result a {
+    cursor: pointer;
+}
+
+#result img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 40vh;
+}
+
+.showMore{
+    display: none;
+}
